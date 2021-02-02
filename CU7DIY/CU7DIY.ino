@@ -147,7 +147,6 @@ void CheckAllButtons(void) {
                            
               switch (buttbx.key[i].kstate) {  
                       case PRESSED:
-                      case HOLD:
                                 //Joystick.setButton(buttbx.key[i].kchar, 1); //assigns the button from they Keypad to the Joystick
                                 //I dont know how to assign F13 keys
                                 //use key combinations instead
@@ -179,7 +178,6 @@ void CheckAllButtons(void) {
                                       break;
                                     };
                                    } else {
-                                Keyboard.press(KEY_LEFT_CTRL);
                                 Keyboard.press(buttbx.key[i].kchar);
                                 break;
                                    }
