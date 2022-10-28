@@ -34,12 +34,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #define ENCODER_RESOLUTION 2
-
+/*
 #define ENCODERS_PAD_A { D6 }
 #define ENCODERS_PAD_B { D4 }
+*/
 
+#define ENCODERS_PAD_A { D15 }
+#define ENCODERS_PAD_B { D10 }
+
+#define MATRIX_ROW_PINS { D7,D9,D19 }
+#define MATRIX_COL_PINS { D4,D6,D8 }
+/*
 #define MATRIX_ROW_PINS { D7, F0, F6 }
 #define MATRIX_COL_PINS { F5, F7, F4 }
+*/
 
 /* COL2ROW, ROW2COL, or CUSTOM_MATRIX */
 #define DIODE_DIRECTION COL2ROW
